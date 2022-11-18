@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Bier",
+        "categoryName": "Getränke"
+    },
+    {
+        "name": "Wein",
+        "categoryName": "Getränke"
+    },
+    {
+        "name": "Eier",
+        "categoryName": "Tierpodukte"
+    },
+    {
+        "name": "Butter",
+        "categoryName": "Milchprodukte"
+    },
+    {
+        "name": "Jogurt",
+        "categoryName": "Milchprodukte"
+    }
+]
