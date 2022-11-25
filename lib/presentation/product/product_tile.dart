@@ -1,18 +1,20 @@
 import 'package:einkaufsliste/infrastructure/product.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class ProductTile extends StatelessWidget {
+import 'product_page_controller.dart';
+
+class ProductTile extends GetView<ProductPageController> {
   final Product product;
-  final Function(Product) onPressed;
 
-  const ProductTile(
-      {super.key, required this.product, required this.onPressed});
+  const ProductTile({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(product.name),
-      onTap: () => onPressed(product),
+      subtitle: Text(product.categoryName),
+      onTap: () => controller.addProductToCart(product),
     );
   }
 }
